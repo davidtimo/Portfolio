@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #303030;
+    background-image: none;
+}
+
+#head{
+    top: 0px;
+    position: relative;
+}
+
+
+#headMenu img{
+    width: 100%;
+    padding: none;
+    filter: brightness(46%);
+}
+
+#bigText{
+    position: absolute;
+    width: 700px         ;
+    top: 20%;
+    /* right: 2%; */
+    font-family: 'Mulish', sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+    color: #dedede;
+    font-size: 58px;
+    text-align: center;
+    opacity: 0.5;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(31, 31, 31);
+}
+li{
+    float: right;
+    display: inline;
+}
+li a{
+    display: block;
+    color: #dedede;
+    text-align: center;
+    padding: 40px 59px;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: 'Sora', sans-serif;
+    transition: 0.5s;
+}
+
+.active{
+    background-color: #333333;
+}
+
+li a:hover{
+    background-color: #565656;
+    opacity: 0.7;
+}
+
+.logo h2{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 45px;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+input[type=text]{
+    
+    width: 94.25%;
+    padding: 8px;
+    margin: 5px ;
+    margin-top: 0px;
+    box-sizing: content-box;
+    border: none;
+    border-bottom: 2px solid grey;
+    /* border-radius: 4px; */
+    margin-bottom: 10px;
+    background-color: rgb(230, 230, 230);
+}
+
+
+
+input[type=submit]{
+    
+    border: none;
+    padding: 8px 16px;
+    margin-top: 15px;
+    /* margin-bottom: -10px; */
+    border-radius: 5px;
+    background-color: #333333;
+    color: #fff;
+    font-family: sora;
+    font-size: 18px;
+    transition: 0.5s;
+
+}
+
+input[type=submit]:hover{
+    background-color: #565656;
+}
+
+
+select{
+    width: 94.25%;
+    padding: 8px;
+    margin: 5px;
+    box-sizing: content-box;
+    /* border-radius: 5px; */
+    border: none;
+    border-bottom: 2px solid grey;
+    background-color: rgb(230, 230, 230);
+    margin-bottom: 10px;
+}
+
+
+
+textarea{
+    width: 94.25%;
+    padding: 8px;
+    margin: 5px;
+    box-sizing: content-box;
+    border: none;
+    border-bottom: 2px solid grey;
+    background-color: rgb(230, 230, 230);
+}
+
+label{
+    padding: 7px;
+}
+
+.fill{
+    padding-top: 25px;
+    
+    align-content: center;
+    
+}
+
+fieldset legend{
+    font-family: 'Racing Sans One', cursive;
+    color: rgb(124, 124, 124);
+    font-size: 60px;
+    padding-bottom: 8px;
+
+}
+
+fieldset option{
+    font-family: sora;
+    font-weight: bold;
+}
+
+fieldset{
+    margin:2% 30%;
+    border: 0px;
+    border-radius: 7px;
+    min-width: 200px;
+    background-color: rgb(230, 230, 230);
+    font-family: sora;
+    font-weight: bold;
+
+    padding: 20px;
+
+}
+

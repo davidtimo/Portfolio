@@ -1,0 +1,159 @@
+body{
+    font-family: 'Sora', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: #ccac8c;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px 50px;
+    margin: 20px 15px;
+    background: linear-gradient(0deg, rgba(49,33,19,1) 0%, rgba(158,121,90,1) 100%);
+    border: 10px solid #371300;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px;
+}
+
+.form_container .title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.form_container h1{
+    display: inline-block;
+    color: #371300;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    border-bottom: 5px solid #371300;
+    margin-bottom: 20px;
+}
+
+.form_container form{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    margin-top: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 400px;
+}
+
+.form_container form input, select{
+    color: #371300;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+}
+
+.form_container form select{
+    color: #371300;
+    font-family: 'Sora', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#input_name, #input_email, #input_product, #input_quantity, #input_number, #input_address{
+    width: 400px;
+    height: 34px;
+    border: none;
+    border-radius: 5px;
+}
+
+#input_yes, #input_no{
+    width: 20px;
+    height: 20px;
+}
+
+#input_agree{
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#name{
+    padding-right: 95px;
+}
+
+#email{
+    padding-right: 92px;
+}
+
+#product{
+    padding-right: 77px;
+}
+
+#quantity{
+    padding-right: 70px;
+}
+
+#phone{
+    padding-right: 15px;
+}
+
+#receipt{
+    padding-right: 50px;
+}
+
+#yes, #no{
+    padding-left: 5px;
+    padding-right: 30px;
+}
+
+#address{
+    padding-right: 75px;
+}
+
+#agree{
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+form p{
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+#reset, #confirm_btn{
+    color: white;
+    background-color: #371300;
+    font-size: 18px;
+    padding: 15px 60px;
+    border: 3px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+#reset:hover, #confirm_btn:hover{
+    background-color: #ccac8c;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.1s ease;
+}
+
+

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #303030;
+    background-image: none;
+}
+
+#head{
+    top: 0px;
+    position: relative;
+}
+
+
+#headMenu img{
+    width: 100%;
+    padding: none;
+}
+
+#bigText{
+    position: absolute;
+    width: 700px         ;
+    top: 14%;
+    right: 2%;
+    font-family: 'Mulish', sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+    color: #dedede;
+    font-size: 58px;
+    text-align: right;
+    opacity: 0.5;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(31, 31, 31);
+}
+li{
+    float: right;
+    display: inline;
+}
+li a{
+    display: block;
+    color: #dedede;
+    text-align: center;
+    padding: 40px 59px;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: 'Sora', sans-serif;
+    transition: 0.5s;
+}
+
+.active{
+    background-color: #333333;
+}
+
+li a:hover{
+    background-color: #565656;
+    opacity: 0.7;
+}
+
+.logo h2{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 45px;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+#mainHead{
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 30px;
+    font-family: 'Racing Sans One', cursive;
+    color: white;
+}
+
+#motorImg{
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 37%;
+
+    align-items: flex-start;
+
+    
+}
+
+#motorImg:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.5s ease; 
+}
+
+figure{
+    display: inline-flex;
+}
+
+figcaption{
+    width: 35%;
+}
+
+figcaption p{
+    font-style: italic;
+    font-size: 19px;
+}
+
+.isih{
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+    align-content: center;
+}
+
+.isih h2{
+    font-family: 'Racing Sans One', cursive;
+    font-weight: lighter;
+}
+
+.left{
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.right{
+    flex-direction: row;
+    text-align: left;
+}
+
+#kind{
+    font-size: 39px;
+    margin: 0;
+}
+
+
+footer{
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #371300;
+    height: auto;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}

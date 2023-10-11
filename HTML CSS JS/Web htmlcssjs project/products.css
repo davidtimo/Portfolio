@@ -1,0 +1,176 @@
+body{
+    font-family: 'Sora', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: #ccac8c;
+}
+
+.main_container{
+    background: linear-gradient(0deg, rgba(49,33,19,1) 0%, rgba(158,121,90,1) 100%);
+    padding-top: 70px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 10px solid #371300;
+    border-radius: 50px;
+}
+
+.product{
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.product #title{
+    display: inline-block;
+    color: #371300;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    border-bottom: 5px solid #371300;
+    margin-bottom: 20px;
+}
+
+.product_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.card{
+    background-color: white;
+    background-size: cover;
+    border: 10px solid #371300;
+    border-radius: 30px;
+    width: 420px;
+    height: 670px;
+    margin: 10px 10px;
+}
+
+.product_image{
+    height: 250px;
+    margin-top: -1px;
+    margin-left: -0.1px;
+    margin-right: -0.1px;
+    margin-bottom: 8px;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.product01{
+    background-image: url(./Asst/dark_choco_cake.jpeg);
+}
+
+.product02{
+    background-image: url(./Asst/choco01.jpg);
+}
+
+.product03{
+    background-image: url(./Asst/nosus.jpg);
+}
+
+.product04{
+    background-image: url(./Asst/chocolate_parfait.jpg);
+}
+
+.product05{
+    background-image: url(./Asst/chocolate_macaron.jpg);
+}
+
+.product06{
+    background-image: url(./Asst/recommend01.jpg);
+}
+
+.product07{
+    background-image: url(./Asst/martabak.jpeg);
+}
+
+.product08{
+    background-image: url(./Asst/pudding.png);
+}
+
+.product09{
+    background-image: url(./Asst/kwetiau_coklat.jpg);
+}
+
+.product10{
+    background-image: url(./Asst/muffin.jpg);
+}
+
+.product11{
+    background-image: url(./Asst/recommend03.jpg);
+}
+
+.product12{
+    background-image: url(./Asst/recommend04.jpg);
+}
+
+.detail_container{
+    background: linear-gradient(0deg, rgba(49,33,19,1) 0%, rgba(158,121,90,1) 100%);
+    margin-left: -0.1px;
+    margin-right: -0.1px;
+    height: 290px;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+}
+
+.card h2{
+    color: #371300;
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    margin-bottom: 30px;
+}
+
+.card p{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 28px;
+    line-height: 1.5;
+}
+
+.card a{
+    display: block;
+    color: white;
+    background-color: #371300;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: 3px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+
+.card a:hover{
+    background-color: #ccac8c;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.1s ease;
+}
+
+@media screen and (max-width: 768px) {
+
+    .detail_container{
+        width: 401px;
+    }
+
+}
+

@@ -1,0 +1,112 @@
+NOMOR 1
+SELECT 
+th.transaction_id,
+c.customer_name,
+c.customer_gender,
+th.transaction_date
+FROM transaction_header AS th
+JOIN customers AS c
+ON c.customer_id = th.customer_id
+WHERE YEAR(th.transaction_date) = 2021;
+
+NOMOR 2
+SELECT 
+th.transaction_id,
+DATE_FORMAT(th.transaction_date, '%M, %d %Y') AS 'Date of Transaction',
+c.customer_name,
+p.product_name,
+(td.quantity*p.product_price) AS 'Total Price'
+FROM transaction_header th
+JOIN customers c
+ON th.customer_id = c.customer_id
+JOIN transaction_detail td
+ON th.transaction_id = td.transaction_id
+JOIN products p
+ON td.product_id = p.product_id;
+
+NOMOR 3
+SELECT 
+LOWER(p.product_name) AS 'Name of Product',
+p.product_price AS 'Product Price',
+CONCAT('Discount ', FLOOR(rand()*31), '%')
+FROM products p
+WHERE p.product_name LIKE 'laptop%'
+UNION
+SELECT 
+LOWER(p.product_name) AS 'Name of Product',
+p.product_price AS 'Product Price',
+CONCAT('Discount ', FLOOR(rand()*31), '%')
+FROM products p
+WHERE p.product_price > 2000000;
+
+NOMOR 4
+SELECT 
+st.staff_id AS 'ID',
+st.staff_name AS 'Name',
+st.staff_gender AS 'Gender'
+FROM staffs st
+WHERE st.staff_id IN('ST001', 'ST002', 'ST003')
+UNION
+SELECT 
+c.customer_id AS 'ID',
+c.customer_name AS 'Name',
+c.customer_gender AS 'Gender'
+FROM customers c
+WHERE c.customer_id IN('CU004', 'CU005', 'CU006');
+
+NOMOR 5
+SELECT 
+th.transaction_id,
+th.transaction_date,
+c.customer_id,
+c.customer_name,
+c.customer_gender
+FROM transaction_header th
+JOIN customers c
+ON th.customer_id = c.customer_id
+WHERE YEAR(th.transaction_date) = 2022 AND
+c.customer_gender LIKE 'Male'
+ORDER BY c.customer_name DESC;
+
+NOMOR 6
+START TRANSACTION;
+
+ALTER TABLE products
+ADD COLUMN product_type VARCHAR(8) 
+CHECK(product_type IN ('Laptop', 'Keyboard', 'Mouse', 'Phone', 'Headset'));
+
+COMMIT;
+
+NOMOR 7
+CREATE VIEW StaffWillRetire
+AS
+SELECT 
+st.staff_id,
+st.staff_name,
+DATE_FORMAT(FROM_DAYS(DATEDIFF(CURDATE(),st.staff_dob)), '%y') AS 'Staff Age'
+FROM staffs st
+WHERE DATE_FORMAT(FROM_DAYS(DATEDIFF(CURDATE(),st.staff_dob)), '%y') > 50;
+
+NOMOR 8
+SELECT 
+p.product_id,
+p.product_name,
+p.product_price,
+COUNT(td.transaction_id) AS 'products_sold'
+FROM products p
+JOIN transaction_detail td
+ON p.product_id = td.product_id
+GROUP BY p.product_id
+HAVING COUNT(td.transaction_id) >= 2;
+
+NOMOR 9
+DELETE FROM customers c
+WHERE YEAR(c.customer_dob) > 2002;
+
+Notes :
+Remember HAVING for AGGREGATE Functions
+Remember Combination of DATE_FORMAT(FROM_DAYS(DATE_DIFF(CURDATE(), custoemrdate)),'%')
+Remember CHECK can be added right after ADD COLUMN, and is CHECK(whole expr)
+Remember LEFT JOIN RIGHT JOIN
+Remember Math Functions
+Remember CONCAT(str1, str2)

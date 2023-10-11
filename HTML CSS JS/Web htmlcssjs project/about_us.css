@@ -1,0 +1,185 @@
+body{
+    font-family: 'Sora', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: #ccac8c;
+  }
+
+main{
+     padding-bottom: 700px;
+};
+
+.about_us{
+    text-align: justify;
+    font-family: 'Sora', sans-serif;
+    font-weight: bold;
+}
+
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.izi{
+    display: block;
+    margin: auto;
+    padding-left: 10%;
+    padding-bottom: 70px;
+}
+
+.content{
+    float: left;
+    width: 55%;
+}
+
+.content h1{
+    display: inline;
+    color: #371300;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    border-bottom: 5px solid #371300;
+}
+
+
+.history h1{
+    display: inline-block;
+    color: #371300;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    border-bottom: 5px solid #371300;
+    margin-top: 50px;
+}
+
+.history p{
+    text-indent: 80px;
+    text-align: justify;
+    width: 72%;
+    color: white;
+    font-weight: bold;
+    font-family: sora;
+    padding-top: 15px;
+    margin-top: 10px;
+    font-size: 19px;
+    line-height: 2.5;
+}
+
+.content p{
+    text-indent: 80px;
+    color: white;
+    font-weight: bold;
+    font-family: sora;
+    padding-top: 15px;
+    margin-top: 10px;
+    font-size: 19px;
+    line-height: 2.5;
+    text-align: justify;
+}
+
+.ingredients h1{
+    display: inline;
+    color: #371300;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    border-bottom: 5px solid #371300;
+}
+
+.izi{
+    position: relative;
+    float:left;
+    width:100%;
+}
+
+ul{
+    position:relative;
+}
+
+.image img{
+    padding-top: 30px;
+    margin-left: 50px;
+    width: 400px;
+    height: auto;  
+}
+
+.secret{
+    list-style-type: none;
+}
+
+.secret li{
+    float: right;
+    padding-top: 50px;
+    width: 33.33%;
+}
+
+.secret img{
+    width: 85%;
+    display: relative; 
+    border-radius: 10px;
+}
+
+
+
+.secretText{
+    width: 28%;
+    position:absolute;
+    /* bottom:50px; */
+    /* right: 20px; */
+    /* background-color: black; */
+    color: rgb(0, 0, 0);
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    text-align: center;
+    font-size: 36px;
+}
+
+.secret img:hover{  
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    
+    .content-section{
+        float: left;
+        width: 55%;
+    }
+    .content{
+        width: 100%;
+    }
+
+    .izi p{
+        width: 88%;
+    }
+
+    .secret li{
+        width: 88%;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .secretText{
+        width:90%;
+        position: relative;
+        padding-right: 25px;
+    }
+
+    .image img{
+        margin-top: 20px;
+        margin-left: 90px;
+    }
+
+}
+

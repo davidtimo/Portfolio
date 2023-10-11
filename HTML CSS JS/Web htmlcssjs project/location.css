@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+    font-family: 'Sora', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: #ccac8c;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+.photos ul{
+    color: white;
+    list-style: none;
+}
+
+.photos ul li {
+    background-image: url(./Asst/bestseller.jpg);
+    display: inline;
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    padding: 0;
+    text-align:center; 
+    color: #000;
+}
+
+
+.photos ul li span a {
+      background-color: rgb(0, 0, 0);
+}
+
+.photos ul li a {
+    display: block;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+  }
+
+.photos ul li a:hover {
+    opacity: 1.0;
+  }
+
+.photos ul li a img {
+    border: 6px solid #000000;
+}
+
+.gambarcabang{
+    float: left;
+}
+
+.namacabang h2{
+    font-family:'Pacifico', cursive;;
+    font-weight: bolder;
+    
+}
+
+.namacabang p{
+    font-size:22px;
+    font-style: oblique;
+    color:rgb(82, 57, 28);
+}
+
+.namacabang{
+    margin-left: 52px;
+    font-size: 40px;
+    display:inline;
+    color:rgb(82, 57, 28);
+    
+}
+
+.cabang1, .cabang2, .cabang3{
+    display: flex;
+    padding: 20px;
+    overflow: hidden;
+    margin-left: 20%;
+    margin-bottom:2%;
+}
+
+.cabang1{
+    padding-top: 4%;    
+}
+
+.gambarabotus{
+
+    width:100%;
+    filter: brightness(60%);
+}
+
+.abotuscontent{
+    position: absolute;
+    width: 100%;
+    color: rgb(245, 245, 245);
+    text-align: center;
+    font-size: 85px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: pacifico;
+    font-weight: lighter;
+}
+
+.gambarcabang img{
+    width: 380px;
+    border: 3px solid;
+    border-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    
+}
+
+.gambarcabang img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.fa-map-marker{
+    font-size: 28px;
+}
+
+@media screen and (max-width: 768px) {
+    .abotuscontent{
+        top: 210px;
+        font-size: 50px;
+    }
+
+    .cabang1, .cabang2, .cabang3{
+        margin-left: 6%;
+    }
+
+    .namacabang h2{
+        font-size: 40px;
+    }
+
+}

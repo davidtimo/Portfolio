@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase | CHocs - Official Website</title>
+
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="purchase.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="purchase.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>   
+            <ul>
+                <li><span class="logo">CHocs</span></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a class="active" href="purchase.html">Purchase</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form_container">
+            <div class="title">
+                <div>
+                    <h1>Purchase</h1>
+                </div>
+            </div>
+
+            <form action="">
+                <div>
+                    <label for="input_name" id="name">Name</label>
+                    <input type="text" name="" id="input_name">
+                </div>
+
+                <div>
+                    <label for="input_product" id="product">Product </label>
+                    <select name="" id="input_product">
+                        <option value="">Select a product</option>
+                        <option value="Deep_Black_Forest">Deep Black Forest</option>
+                        <option value="Pile_of_Chocolate_Bar">Pile of Chocolate Bar</option>
+                        <option value="ChocoSus">ChocoSus</option>
+                        <option value="Sweet_Cacao_Parfait">Sweet Cacao Parfait</option>
+                        <option value="Chocolate_Macaron">Chocolate Macaron</option>
+                        <option value="Tiramisu">Tiramisu</option>
+                        <option value="Martabak_CHocs">Martabak CHocs</option>
+                        <option value="Choco_Pudding">Choco Pudding</option>
+                        <option value="Deep_Brown_Kwetiau">Deep Brown Kwetiau</option>
+                        <option value="Choco_Muffin">Choco Muffin</option>
+                        <option value="Chocolate_Platter">Chocolate Platter</option>
+                        <option value="Mocha_Ice_Cream">Mocha Ice Cream</option>
+                    </select>       
+                </div>
+                
+                <div>
+                    <label for="input_quantity" id="quantity">Quantity </label>
+                    <input type="text" name="" id="input_quantity">
+                </div>
+                    
+                <div>
+                    <label for="input_email" id="email">E-mail </label>
+                    <input type="text" name="" id="input_email">
+                </div>
+
+                <div>
+                    <label for="input_number" id="phone">Phone Number </label>
+                    <input type="text" name="" id="input_number">
+                </div>
+
+                <div>
+                    <label for="input_address" id="address">Address </label>
+                    <input type="text" name="" id="input_address">
+                </div>
+
+                <div>
+                    <label for="" id="receipt">Send receipt to e-mail</label>
+                    <input type="radio" name="receipt" id="input_yes">
+                    <label for="input_yes" id="yes">Yes</label>
+                    <input type="radio" name="receipt" id="input_no">
+                    <label for="input_no"id="no">No</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="" id="input_agree">
+                    <label for="input_agree" id="agree">I agree with all terms & conditions</label>
+                </div>
+                
+                <p id="error_msg"></p>
+                <div class="button">
+                    <input type="reset" value="Reset" id="reset">
+                    <input type="submit" value="Confirm" id="confirm_btn">
+                </div>
+                
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="isifooter">
+            <h2 id="footer_logo">CHocs</h2>
+            <p>Chocolates are sweet</p>
+            <ul class="icon">
+                <li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+                <li><a href="https://twitter.com" class="fa fa-twitter"></a></li>
+                <li><a href="https://instagram.com" class="fa fa-instagram"></a></li>
+            </ul>
+            <span id="copyright">&copy; 2022 CHocs. All rights reserved.  All trademarks are property of their respective owners.</span>
+        </div>
+    </footer>
+</body>
+
+</html>

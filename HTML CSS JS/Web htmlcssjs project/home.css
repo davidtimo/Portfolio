@@ -1,0 +1,270 @@
+body{
+  font-family: 'Sora', sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  background-color: #ccac8c;
+}
+
+.best_container{
+  margin-top: 30px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.bestseller{
+  display: inline-block;
+  color: #371300;
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  font-size: 50px;
+  border-bottom: 5px solid #371300;
+  margin-bottom: 35px;
+}
+
+.best_photos{
+  display: flex;
+  justify-content: center;
+  margin-right: 40px;
+  margin: auto;
+}
+
+.choco01{
+  margin-top: 10px;
+  width: 300px;
+  height: auto;
+}
+
+.choco02{
+  margin-top: 10px;
+  width: 300px;
+  height: auto;
+}
+
+.choco03{
+  margin-top: 10px;
+  width: 300px;
+  height: auto;
+}
+
+#choco_text{
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.best_photos ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+  list-style: none;
+  border: 10px solid #371300;
+  border-radius: 50px;
+  background: linear-gradient(0deg, rgba(49,33,19,1) 0%, rgba(158,121,90,1) 100%);
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+
+.best_photos ul li{
+  background-image: url(./Asst/bestseller.jpg);
+  background-size: cover;
+  display: inline;
+  list-style: none;
+  float: left;
+  border: 5px solid #371300;
+  border-radius: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 40px;
+  text-align: center; 
+}
+
+.best_photos ul li a{
+  display: block;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.best_photos ul li a img{
+  border: 5px solid #371300;
+  border-radius: 20px;
+}
+
+.best_photos ul li:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
+.rec_container{
+  margin-top: 30px;
+  padding-bottom: 50px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.recommendation{
+  display: inline-block;
+  color: #371300;
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  font-size: 50px;
+  border-bottom: 5px solid #371300;
+  margin-bottom: 40px;
+}
+
+.slides_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(49,33,19,1) 0%, rgba(158,121,90,1) 100%);
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-left: 250px;
+  margin-right: 250px;
+  border: 10px solid #371300;
+  border-radius: 20px;
+}
+
+.slider{
+  position: relative;
+  width: 600px;
+  overflow: hidden;
+}
+
+.rec_photos{
+  display: flex;
+  width: 100%;
+}
+
+.rec_photos img{
+  height: 400px;
+  width: 600px;
+  border-radius: 10px;
+  transition: all 0.15s ease;
+}
+
+.rec_photos input{
+  display: none;
+}
+
+.dots{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dots label{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 5px solid #371300;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 5px;
+}
+
+.dots label:hover{
+  background-color: #371300;
+}
+
+#img1:checked ~ .m1 {
+  margin-left: 0;
+}
+
+#img2:checked ~ .m2 {
+  margin-left: -100%;
+}
+
+#img3:checked ~ .m3 {
+  margin-left: -200%;
+}
+
+#img4:checked ~ .m4 {
+  margin-left: -300%;
+}
+
+.info_container{
+  margin-top: 30px;
+  padding-bottom: 50px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.info{
+  display: inline-block;
+  color: #371300;
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  font-size: 50px;
+  border-bottom: 5px solid #371300;
+  margin-bottom: 20px;
+}
+
+.desc{
+  display: inline-block;
+  font-size: 18px;
+  line-height: 2.5;
+  text-align: center;
+  padding-top: 25px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+@media screen and (max-width: 768px){
+
+  #choco_text{
+    font-size: 45px;
+
+  }
+
+  .bestseller{
+    font-size: 60px;
+  }
+
+  .best_photos{
+    width: 680px;
+  }
+
+  .best_photos li{
+    width: 90%;
+  }
+
+  .choco01, .choco02, .choco03{
+    width: 380px;
+  }
+  
+  .recommendation{
+    font-size: 60px;
+  }
+
+  .slides_container{
+    width: 680px;
+    margin: 0;
+    margin-left: 47px;
+  }
+  
+  .info{
+    font-size: 65px;
+  }
+
+  .desc{
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 17px;
+  }
+}

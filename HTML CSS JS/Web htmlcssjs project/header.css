@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ccac8c;
+}
+
+li, a{
+    font-family: 'Sora', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    background-color: #371300;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px; 
+}
+
+.logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    height: auto;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+nav{
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    padding: 10px 35px;
+    padding: 10px 25px 5px;
+}
+
+nav li a{
+    transition: all 0.3s ease 0;
+}
+
+nav li a:hover{
+    color: #d49b7e;
+}
+
+
+nav .active{
+    color: #d49b7e;
+}
+
+@media screen and (max-width: 768px){
+
+    header li{
+        padding: 12px 12px;
+    }
+    
+  }
